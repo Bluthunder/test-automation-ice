@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" parallel="methods" name="AZOSmokeTest">
+	<listeners>
+        <listener class-name="com.ch.integration.listener.SuiteAlterListener"/>
+    </listeners>
+	<test name="Tests">
+		<groups>
+			<run>				
+			<include name="Smoke"/>
+			</run>
+		</groups>
+	</test>
+	<parameter name="browser" value="firefox" />
+	<parameter name="siteName" value="AutoZone" />
+	<parameter name="projectName" value="AutoZone"/>
+	<parameter name="environment" value="dev" />
+	<parameter name="formfactor" value="desktop" />
+	<parameter name="integration" value="chcloud" />
+	<parameter name="os" value="windows" />
+	<parameter name="suite" value="Product" />
+	<parameter name="group" value="module"/>
+	<parameter name="osVersion" value="" />
+	<parameter name="device" value="" />
+	<parameter name="autversion" value="" />
+	<parameter name="autURL" value="" />
+	<parameter name="executionId" value="sd-010-01-01"/>
+</suite>

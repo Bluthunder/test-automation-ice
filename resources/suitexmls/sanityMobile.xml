@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" parallel="methods" name="AZOSanity"> 
+
+	<test name="Sanity">
+		<groups>
+			<run>
+			<include name="P1" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.ch.azo.mobiletests.SanityTestMobile">
+             <methods> 
+             <include name="SanityMobile_TC01_CreateAnAccount" /> 
+             <include name="Sanity_TC02_SignInWithExistingAccountInMobile" /> 
+             <include name="Sanity_TC03_SignOutInMobile" /> 
+             <include name="Sanity_TC04_ShelfPageInMobile" /> 
+             <include name="Sanity_TC05_PDPInMobile" /> 
+             <include name="Sanity_TC06_VerifySearchInMobile" /> 
+             <include name="Sanity_TC07_AddStoreAndChangeStoreInMobile" /> 
+             
+             </methods>
+                 
+                </class>
+		</classes>
+	</test>
+</suite>

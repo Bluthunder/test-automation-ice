@@ -1,0 +1,1 @@
+mvn test -Dsurefire.suiteXmlFiles=C:/Users/Raju/git/autozone/resources/suitexmls/test.xml -Dtestng.mode.dryrun=true
